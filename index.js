@@ -31,7 +31,12 @@ app.use(express.static(__dirname + "/public"));
 
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Iqra Render');
+}
+);
+
+app.get('/test', (req, res) => {
+    res.status(200).send('Hello World!');
 }
 );
 
